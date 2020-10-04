@@ -1,0 +1,119 @@
+// 1440
+@media (max-width: 1440px) {
+    .menu {
+        width: 80%;
+    }
+    .museum-name {
+        & h1 {
+            left: 5%;
+        }
+    }
+}
+
+// 1200
+@media (max-width: 1200px) {
+    .menu > * {
+        font-size: 19px;
+    }
+}
+
+// 992
+@media (max-width: 992px) {
+    .header {
+        & .contaier {
+            justify-content: space-between;
+            padding: 0;
+            margin: 50px 5%;
+        }
+    }
+    .burger {
+        display: flex;
+    }
+    .burger, .logo {
+        align-self: flex-start;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0;
+    }
+    .news-card + .news-card {
+        margin-right: 10px;
+    }
+    .visible-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .museum-name {
+        height: fit-content;
+        & h1 {
+            font-size: 3em;
+            bottom: 5%;
+            left: 5%;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+// 768
+@media (max-width: 768px) {
+    .museum-name {
+        height: fit-content;
+        & h1 {
+            font-size: 2em;
+            left: 5%;
+        }
+    }
+}
+
+// 660
+@media (max-width: 660px) {
+    .categoty-name {
+        font-size: 4em;
+    }
+    .news-wrapp {
+        flex-direction: column;
+    }
+    .news-card {
+        width: fit-content;
+    }
+    .footer {
+        & .container  {
+            flex-direction: column;
+            & > * {
+                width: 100%;
+                margin: 2% 0;
+            }
+            & .copyright, .contacts {
+                text-align: center;
+            }
+            & .social {
+                order: -1;
+            }
+        }
+    } 
+}
+
+// 425
+@media (max-width: 425px) {
+    .logo {
+        & span {
+            display: none;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .categoty-name {
+        font-size: 3em;
+    }
+    .news-card__name {
+        font-size: 30px;
+    }
+}
